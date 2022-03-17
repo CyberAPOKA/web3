@@ -1,24 +1,28 @@
-import logo from './logo.svg';
-import './App.css';
+import Body from './components/Body/Body';
+import Presale from './components/Presale/Presale';
+import Playtoearn from './components/Playtoearn/Playtoearn';
+import Roadmap from './components/Roadmap/Roadmap';
+import Team from './components/Team/Team';
+import Token from './components/Token/Token';
+import Collection from './components/Collection/Collection';
+import Farm from './components/Farm/Farm';
+import Modes from './components/Modes/Modes';
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
+    <div>
+   <Body/>
+   <Modes/>
+   <Presale/>
+   <Playtoearn/>
+   <Roadmap/>
+   <Team/>
+   <Collection/>
+   <Token/>
+   <Farm/>
+
+   </div>
   );
 }
 
